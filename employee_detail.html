@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<title>Employee details</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+<h1>Employee details</h1>
+<form action="employee_detail.php" method="post">
+	Name of the Employee: <input type="text" name="employee_name" placeholder="Employee name">
+	Joining date: <input type="date" name="joining_date" placeholder="dd/mm/yyyy">
+	Photo: <input type="file" name="img" placeholder="Upload in .jpg format only" accept="image/jpg">
+	Birth date: <input type="date" name="birth_date" placeholder="dd/mm/yyyy">
+	Address: <input type="text" name="address" placeholder="Address">
+	Proof details 1: <input type="file" name="Proof1" placeholder="Aadhar card Upload in .jpg format">
+	Proof details 2: <input type="file" name="Proof2" placeholder="PAN card Upload in .jpg format">
+	Contact number: <input type="number" name="contact_number1" placeholder="personal contact number">
+	Contact number of family member: <input type="number" name="contact_number2" placeholder="family member contact number">
+	Contact number of company provided: <input type="number" name="contact_number3" placeholder="company contact number">
+	<input type="submit" name="submit">
+</form>
