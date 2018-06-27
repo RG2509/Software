@@ -11,7 +11,7 @@
 		$odu = $_POST["odu"];
 		$model_number = $_POST["model_number"];
 		echo $ton .'<br>';
-		$sql = "INSERT INTO machine_details (machine_number, machine_name, brand, ton, machine_type, machine_location, idu, odu, model_number)
+		$sql = "INSERT INTO machine_details (machine_number, machine_name, machine_brand, machine_ton, machine_type, machine_location, machine_idu_no, machine_odu_no, machine_compressor_model_no)
 		VALUES ($machine_number, '$machine_name','$brand', $ton,'$machine_type','$machine_location','$idu','$odu',$model_number)";
 		if ($conn->query($sql) === TRUE) {
 		echo "New record created successfully";
