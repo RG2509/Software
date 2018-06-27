@@ -1,20 +1,18 @@
-
 <?php
 	require_once('connection.php');	
 	if(isset($_POST['submit'])){
-		$employee_name = $_POST["employee_name"];
-		$joining_date = $_POST['joining_date'];
-		$img = $_POST['img'];
-		$birth_date = $_POST['birth_date'];
-		$address = $_POST['address'];
-		$proof1 = $_POST['proof1'];
-		$proof2 = $_POST['proof2'];
-		$contact_number1 = $_POST['contact_number1'];
-		$contact_number2 = $_POST['contact_number2'];
-		$contact_number3 = $_POST['contact_number3'];
-		echo $employee_name .'<br>';
-		$sql = "INSERT INTO employee_details (employee_name, joining_date, img, birth_date, address, proof1, proof2, contact_number1,  contact_number2, contact_number3)
-		VALUES ($employee_name,'$joining_date','$img',$birth_date,$address,$proof1,'proof2','$contact_number1','$contact_number2','$contact_number3')";
+		$machine_number = $_POST["machine_number"];
+		$machine_name = $_POST["machine_name"];
+		$brand = $_POST["brand"];
+		$ton = $_POST["ton"];
+		$machine_type = $_POST["machine_type"];
+		$machine_location = $_POST["machine_location"];
+		$idu = $_POST["idu"];
+		$odu = $_POST["odu"];
+		$model_number = $_POST["model_number"];
+		echo $ton .'<br>';
+		$sql = "INSERT INTO machine_details (machine_number, machine_name, machine_brand, machine_ton, machine_type, machine_location, machine_idu_no, machine_odu_no, machine_compressor_model_no)
+		VALUES ($machine_number, '$machine_name','$brand', $ton,'$machine_type','$machine_location','$idu','$odu',$model_number)";
 		if ($conn->query($sql) === TRUE) {
 		echo "New record created successfully";
 		} else {
