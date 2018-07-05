@@ -1,0 +1,12 @@
+#notesHeader {
+  /* margin-top: 2%; */
+  padding-top: 1%;
+}
+#connectedCard {
+  color: #000;
+  border-color: #fff;
+  opacity: 0.3;
+}
+#eventSection {
+  margin: 0px !important;
+}
